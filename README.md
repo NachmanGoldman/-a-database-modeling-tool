@@ -1,5 +1,5 @@
 # a-database-modeling-tool
-A system for creating and reading databases using diagrams.  
+## A system for creating and reading databases using diagrams.  
 ### Possible actions  
 Database connection.  
 Draw a diagram representing a table.  
