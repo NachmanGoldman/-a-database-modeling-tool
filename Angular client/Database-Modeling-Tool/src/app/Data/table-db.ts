@@ -9,8 +9,4 @@ export class TableDB {
     public Columns: Array<FieldDB>,
     public TableConstraints: TableConstraints
   ) {}
-  // FieldList: Array<FieldDB> = [];
-  // TableName: string = '';
-  // PrimaryKey: Array<FieldDB> = [];
-  // FK: Array<FK> = [];
 }
