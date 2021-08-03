@@ -1,0 +1,19 @@
+.shape-container {
+  height: calc(100vh - 128px);
+  display: flex;
+  width: 100%;
+  background-color: rgb(136, 184, 168);
+}
+.draw-container {
+  height: 100%;
+  width: 70%;
+}
+.shape-details {
+  height: 100%;
+  width: 30%;
+
+  background-color: blueviolet;
+}
+.button-actions {
+  margin-top: 10px;
+}

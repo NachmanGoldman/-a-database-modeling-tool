@@ -1,0 +1,19 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-details-list {
+  display: grid;
+}
+.footer-item {
+  display: flex;
+}
+.footer-sub-item {
+  text-align: center;
+}
+.img-footer img {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}

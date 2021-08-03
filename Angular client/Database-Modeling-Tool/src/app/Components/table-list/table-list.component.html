@@ -1,0 +1,23 @@
+<h1 *ngIf="tables.length == 0">No Tables</h1>
+
+<mat-grid-list cols="4">
+  <mat-grid-tile *ngFor="let table of tables">
+    <mat-card width="200px">
+      <mat-card-content>
+        {{ table }}
+      </mat-card-content>
+      <mat-card-actions>
+        <button
+          mat-icon-button
+          color="primary"
+          [routerLink]="['../edit-table', table]"
+        >
+          <mat-icon>edit</mat-icon>
+        </button>
+        <button mat-icon-button color="primary" (click)="onDeleteTable(table)">
+          <mat-icon>delete_outline</mat-icon>
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>

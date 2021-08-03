@@ -1,0 +1,64 @@
+<!-- <mat-dialog> -->
+<h1 mat-dialog-title class="text-center">Connection Configuration</h1>
+<form mat-dialog-content [formGroup]="ConnectionForm" class="text-center">
+  <div>
+    <mat-form-field appearance="outline">
+      <mat-label>Data Source</mat-label>
+      <input matInput formControlName="DataSource" />
+    </mat-form-field>
+  </div>
+  <div>
+    <mat-form-field appearance="outline">
+      <mat-label>User ID</mat-label>
+      <input matInput formControlName="UserID" />
+    </mat-form-field>
+  </div>
+
+  <div class="center">
+    <mat-spinner *ngIf="connecting" strokeWidth="2" diameter="50"></mat-spinner>
+  </div>
+  <div>
+    <mat-form-field appearance="outline">
+      <mat-label>Password</mat-label>
+      <input
+        matInput
+        [type]="hide ? 'password' : 'text'"
+        formControlName="Password"
+      />
+      <button
+        mat-icon-button
+        matSuffix
+        (click)="hide = !hide"
+        [attr.aria-label]="'Hide password'"
+        [attr.aria-pressed]="hide"
+      >
+        <mat-icon>{{ hide ? "visibility_off" : "visibility" }}</mat-icon>
+      </button>
+    </mat-form-field>
+  </div>
+
+  <div>
+    <mat-form-field appearance="outline">
+      <mat-label>Initial Catalog</mat-label>
+      <input matInput formControlName="InitialCatalog" />
+    </mat-form-field>
+  </div>
+</form>
+<div mat-dialog-action>
+  <button
+    class="bikur-btn"
+    mat-stroked-button
+    color="primary"
+    (click)="onConnect()"
+  >
+    coonect
+  </button>
+  <button
+    class="bikur-btn float-right"
+    color="primary"
+    mat-stroked-button
+    mat-dialog-close
+  >
+    Close
+  </button>
+</div>

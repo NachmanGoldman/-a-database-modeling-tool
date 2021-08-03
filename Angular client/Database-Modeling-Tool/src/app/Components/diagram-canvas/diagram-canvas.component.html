@@ -1,0 +1,11 @@
+<ejs-diagram
+  #diagram
+  id="diagram"
+  width="100%"
+  height="100%"
+  [getNodeDefaults]="getNodeDefaults"
+  [getConnectorDefaults]="getConnectorDefaults"
+  (doubleClick)="onDoubleClick($event)"
+  (drop)="onDrop($event)"
+  (created)="onCreated($event)"
+></ejs-diagram>

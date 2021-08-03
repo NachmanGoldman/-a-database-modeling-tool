@@ -1,0 +1,16 @@
+.bikur-btn {
+  border-radius: 50px;
+  font-size: 16px;
+  padding-top: 3px;
+  padding-bottom: 6px;
+  min-width: 150px;
+  cursor: pointer;
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}

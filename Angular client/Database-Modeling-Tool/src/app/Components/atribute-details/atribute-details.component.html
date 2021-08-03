@@ -1,0 +1,42 @@
+<h2 mat-dialog-title>Column Settings</h2>
+<mat-dialog-content class="mat-typography" [formGroup]="columnSettings">
+  <div>
+    <mat-form-field appearance="fill">
+      <mat-label>Column Name</mat-label>
+      <input matInput formControlName="ColumnName" />
+    </mat-form-field>
+  </div>
+  <div>
+    <mat-form-field appearance="outline">
+      <mat-label>Column Type</mat-label>
+      <mat-select formControlName="Type">
+        <mat-option *ngFor="let type of columnType" [value]="type">
+          {{ type }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+  <div>
+    <mat-form-field appearance="outline">
+      <mat-label>Lenght</mat-label>
+      <input matInput formControlName="Lenght" />
+    </mat-form-field>
+  </div>
+
+  <section>
+    <mat-checkbox formControlName="IsPrimaryKey">Is Primary Key</mat-checkbox>
+
+    <mat-checkbox formControlName="IsNull">Is Nullable</mat-checkbox>
+  </section>
+  <div>
+    <mat-form-field appearance="outline">
+      <mat-label>Default Value</mat-label>
+      <input matInput formControlName="DefaultValue" />
+    </mat-form-field>
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button (click)="onCancel()">Cancel</button>
+  <button mat-button (click)="onClose()">Save and Close</button>
+</mat-dialog-actions>

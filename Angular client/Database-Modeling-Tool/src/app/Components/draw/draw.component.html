@@ -1,0 +1,33 @@
+<app-symbol-palette
+  #symbolPalette
+  style="width: 10%; height: 90%; float: left"
+></app-symbol-palette>
+<app-diagram-canvas
+  #diagramComponent
+  style="width: 90%; height: 90%; float: right"
+></app-diagram-canvas>
+
+<button mat-button (click)="onSazeAsString()">Export Diagram</button>
+<input
+  id="fileInput"
+  type="file"
+  mat-button
+  (change)="onLoadFromString($event)"
+  style="display: none"
+/>
+<button id="load" mat-button onClick="fileInput.click()">Load Diagram</button>
+<button mat-button (click)="onSubmit()">Create Tables in Data Base</button>
+<button mat-button (click)="undo()">Undo</button>
+<button mat-button (click)="redo()">Redo</button>
+
+<!-- <app-entity-details *ngIf="node.type == 'entity'"></app-entity-details>
+<app-atribute-details *ngIf="node.type == 'attribute'"></app-atribute-details> -->
+
+<!-- <div
+  [ngSwitch]="node.type"
+  class="node-details"
+  style="float: left; width: 25%"
+>
+  <app-entity-details *ngSwitchCase="'entity'"></app-entity-details>
+  <app-atribute-details *ngSwitchCase="'attribute'"></app-atribute-details>
+</div> -->

@@ -1,0 +1,27 @@
+<header>
+  <mat-toolbar color="primary">
+    <mat-toolbar-row class="space-between">
+      <a mat-button href="">
+        <mat-icon>home</mat-icon>
+      </a>
+      <button mat-stroked-button (click)="openConnectionDialog()">
+        Connect to db
+      </button>
+      <button routerLink="../table-list" mat-stroked-button>
+        read table list
+      </button>
+      <button routerLink="../draw" mat-stroked-button>create table</button>
+      <span> data base moduling tool </span>
+      <span>
+        <a
+          href="https://github.com/NachmanGoldman/FinalProject"
+          class="bi bi-github"
+          role="img"
+          aria-label="GitHub"
+        >
+          Github
+        </a>
+      </span>
+    </mat-toolbar-row>
+  </mat-toolbar>
+</header>

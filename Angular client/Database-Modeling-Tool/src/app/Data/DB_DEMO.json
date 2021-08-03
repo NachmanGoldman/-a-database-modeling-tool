@@ -1,0 +1,35 @@
+{
+  "Tables": [
+    {
+      "TableId": "1",
+      "TableName": "employees",
+      "Columns": [
+        {
+          "ColumnId": "1",
+          "ColumnName": "id",
+          "ColumnType": "string",
+          "ColumnSize": "250",
+          "IsNullable": false,
+          "IsPrimaryKey": true
+        },
+        {
+          "ColumnId": "2",
+          "ColumnName": "Name",
+          "ColumnType": "string",
+          "ColumnSize": "250",
+          "IsNullable": true,
+          "IsPrimaryKey": false
+        }
+      ],
+      "TableConstraints": {
+        "ForeignKey": [
+          {
+            "ColumnId": null,
+            "TableId": null,
+            "TargetColumnId": null
+          }
+        ]
+      }
+    }
+  ]
+}
