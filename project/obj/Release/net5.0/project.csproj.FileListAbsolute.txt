@@ -1,6 +1,0 @@
-C:\Users\This_User\source\repos\project\project\obj\Release\net5.0\project.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\This_User\source\repos\project\project\obj\Release\net5.0\project.AssemblyInfoInputs.cache
-C:\Users\This_User\source\repos\project\project\obj\Release\net5.0\project.AssemblyInfo.cs
-C:\Users\This_User\source\repos\project\project\obj\Release\net5.0\project.csproj.CoreCompileInputs.cache
-C:\Users\This_User\source\repos\project\project\obj\Release\net5.0\project.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\This_User\source\repos\project\project\obj\Release\net5.0\project.MvcApplicationPartsAssemblyInfo.cache
